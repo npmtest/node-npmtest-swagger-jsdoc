@@ -1,6 +1,6 @@
 # npmtest-swagger-jsdoc
 
-#### basic test coverage for  [swagger-jsdoc (v1.9.2)](https://github.com/Surnet/swagger-jsdoc)  [![npm package](https://img.shields.io/npm/v/npmtest-swagger-jsdoc.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-swagger-jsdoc) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-swagger-jsdoc.svg)](https://travis-ci.org/npmtest/node-npmtest-swagger-jsdoc)
+#### basic test-coverage for  [swagger-jsdoc (v1.9.2)](https://github.com/Surnet/swagger-jsdoc)  [![npm package](https://img.shields.io/npm/v/npmtest-swagger-jsdoc.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-swagger-jsdoc) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-swagger-jsdoc.svg)](https://travis-ci.org/npmtest/node-npmtest-swagger-jsdoc)
 
 #### Generates swagger doc based on JSDoc
 
@@ -35,36 +35,15 @@
 ```json
 
 {
-    "name": "swagger-jsdoc",
-    "version": "1.9.2",
-    "description": "Generates swagger doc based on JSDoc",
-    "main": "index.js",
-    "scripts": {
-        "coverage": "istanbul cover _mocha --report html && istanbul check-coverage --statement 95",
-        "jsdoc": "jsdoc --configure .jsdocconf",
-        "start": "node example/app.js",
-        "test": "mocha"
+    "author": {
+        "name": "https://github.com/Surnet/swagger-jsdoc/graphs/contributors"
     },
     "bin": {
         "swagger-jsdoc": "./bin/swagger-jsdoc.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Surnet/swagger-jsdoc.git"
-    },
-    "keywords": [
-        "jsdoc",
-        "restful",
-        "api",
-        "express",
-        "swagger"
-    ],
-    "author": "https://github.com/Surnet/swagger-jsdoc/graphs/contributors",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Surnet/swagger-jsdoc/issues"
     },
-    "homepage": "https://github.com/Surnet/swagger-jsdoc",
     "dependencies": {
         "chokidar": "^1.6.1",
         "commander": "^2.9.0",
@@ -74,6 +53,7 @@
         "recursive-iterator": "^2.0.3",
         "swagger-parser": "^3.4.0"
     },
+    "description": "Generates swagger doc based on JSDoc",
     "devDependencies": {
         "body-parser": "^1.15.0",
         "chai": "^3.5.0",
@@ -84,7 +64,47 @@
         "mocha-jscs": "^5.0.0",
         "mocha-jshint": "^2.3.1",
         "supertest": "^2.0.1"
-    }
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "b62116057dc1ff52304aa5c8bcb7738b17e8daa9",
+        "tarball": "https://registry.npmjs.org/swagger-jsdoc/-/swagger-jsdoc-1.9.2.tgz"
+    },
+    "gitHead": "b871d6f60b389ded6ea7becd5e7150fd42fbcc64",
+    "homepage": "https://github.com/Surnet/swagger-jsdoc",
+    "keywords": [
+        "jsdoc",
+        "restful",
+        "api",
+        "express",
+        "swagger"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "chdanielmueller"
+        },
+        {
+            "name": "drgrove"
+        },
+        {
+            "name": "kalin.chernev"
+        }
+    ],
+    "name": "swagger-jsdoc",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Surnet/swagger-jsdoc.git"
+    },
+    "scripts": {
+        "coverage": "istanbul cover _mocha --report html && istanbul check-coverage --statement 95",
+        "jsdoc": "jsdoc --configure .jsdocconf",
+        "start": "node example/app.js",
+        "test": "mocha"
+    },
+    "version": "1.9.2"
 }
 ```
 
